@@ -41,7 +41,7 @@ namespace Demo.Basic
 				{
 					while (true)
 					{
-						client.Send(new BasicPacket());
+						client.Send(new BasicPacket() { StringData = "I am BasicPacket" });
 						Thread.Sleep(1000);
 					}
 				});
